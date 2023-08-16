@@ -6,7 +6,7 @@
     {{ block.shopify_attributes }}
   >
 
-    {%- if section.blocks.size == 1 -%}
+    {% comment %} {%- if section.blocks.size == 1 -%}
         <div class="announcement-bar" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
             {%- if section.blocks.first.settings.text != blank -%}
               {%- if section.blocks.first.settings.link != blank -%}
@@ -24,9 +24,9 @@
                 </a>
               {%- endif -%}
             {%- endif -%}
-        </div>
+        </div> {% endcomment %}
 
-    {%- elsif section.blocks.size > 1 -%}
+    {% comment %} {%- elsif section.blocks.size > 1 -%} {% endcomment %}
     <slideshow-component
         class="announcement-bar page-width"
         role="region"
