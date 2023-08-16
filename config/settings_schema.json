@@ -23,7 +23,8 @@
                 "id": "text",
                 "label": "t:settings_schema.colors.settings.text.label",
                 "default": "#0000ff"
-              }{
+              },
+              {
                 "type": "color",
                 "id": "button",
                 "label": "t:settings_schema.colors.settings.button_background.label",
