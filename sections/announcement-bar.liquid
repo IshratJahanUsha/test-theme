@@ -6,27 +6,6 @@
     {{ block.shopify_attributes }}
   >
 
-    {% comment %} {%- if section.blocks.size == 1 -%}
-        <div class="announcement-bar" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
-            {%- if section.blocks.first.settings.text != blank -%}
-              {%- if section.blocks.first.settings.link != blank -%}
-                <a href="{{ section.blocks.first.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
-              {%- endif -%}
-                <div class="page-width">
-                  <p class="announcement-bar__message h5">
-                    <span>{{ section.blocks.first.settings.text | escape }}</span>
-                    {%- if section.blocks.first.settings.link != blank -%}
-                      {% render 'icon-arrow' %}
-                    {%- endif -%}
-                  </p>
-                </div>
-              {%- if section.blocks.first.settings.link != blank -%}
-                </a>
-              {%- endif -%}
-            {%- endif -%}
-        </div> {% endcomment %}
-
-    {% comment %} {%- elsif section.blocks.size > 1 -%} {% endcomment %}
     <slideshow-component
         class="announcement-bar page-width"
         role="region"
