@@ -1,5 +1,4 @@
-
-
+hello
 
 <div
     class="utility-bar color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} utility-bar--bottom-border{% endif %}"
@@ -26,7 +25,7 @@
                 id="Slider-{{ section.id }}"
                 aria-live="polite"
                 aria-atomic="true"
-                data-autoplay="{{ section.settings.auto_rotate }}"
+                data-autoplay="{{ section.settings.auto_rotate }}"S
                 data-speed="{{ section.settings.change_slides_speed }}"
               >
                 {%- for block in section.blocks -%}
@@ -69,8 +68,13 @@
                 </button>
               </div>
             </slideshow-component>
-          {%- endif -%}
+          {% comment %} {%- endif -%} {% endcomment %}
         </div>
+
+
+
+
+        
 
 {% schema %}
 {
