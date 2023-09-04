@@ -81,8 +81,7 @@
       },
       {
         "type": "font_picker",
-        "id": "type_header_font",
-        "default": "typography text_1",
+        "id": "type_avenir_next_n6",
         "label": "Font",
         "info": "Selecting a different font can affect the speed of your store.[Learn more about system fonts.](https://help.shopify.com/en/manual/online-store/store-speed/improving-speed#fonts)"
       },
@@ -103,7 +102,7 @@
       {
         "type": "font_picker",
         "id": "type_body_font",
-        "default": "typography text_2",
+        "default": "avenir_next_n4",
         "label": "Font",
         "info": "Selecting a different font can affect the speed of your store.[Learn more about system fonts.](https://help.shopify.com/en/manual/online-store/store-speed/improving-speed#fonts)"
       },
