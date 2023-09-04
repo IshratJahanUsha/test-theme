@@ -80,7 +80,7 @@ a {
 
 .btn {
   all: unset;
-  background-color: var(--Dark-Cyan-color);
+  background-color: var(--accent_color);
   color: var(--primary-background);
   font-weight: 600;
   padding: 1rem 1.5rem;

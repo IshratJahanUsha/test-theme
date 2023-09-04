@@ -54,8 +54,8 @@
       },
       {
         "type": "color",
-        "id": "dark_cyan_color",
-        "label": "Dark Cyan",
+        "id": "accent_color",
+        "label": "Accent",
         "default": "#009688"
       },
       {
