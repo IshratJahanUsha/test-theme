@@ -4,8 +4,8 @@
     "theme_name": "Dawn E-Commerce",
     "theme_version": "1.0",
     "theme_author": "Ishrat Jahan",
-    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
     "name": "Logo",
@@ -87,9 +87,10 @@
       },
       {
         "type": "font_picker",
-        "id": "assistant_n4",
+        "id": "type_header_font",
+        "default": "avenir_next_n6",
         "label": "Font",
-        "info": "Selecting a different font can affect the speed of your store.[Learn more about system fonts.](https://help.shopify.com/en/manual/online-store/store-speed/improving-speed#fonts)"
+        "info": "Selecting a different font can affect the speed of your store.[Learn more about system fonts.](https:\/\/help.shopify.com\/en\/manual\/online-store\/store-speed\/improving-speed#fonts)"
       },
       {
         "type": "range",
@@ -108,9 +109,9 @@
       {
         "type": "font_picker",
         "id": "type_body_font",
-        "default": "assistant_n4",
+        "default": "avenir_next_n4",
         "label": "Font",
-        "info": "Selecting a different font can affect the speed of your store.[Learn more about system fonts.](https://help.shopify.com/en/manual/online-store/store-speed/improving-speed#fonts)"
+        "info": "Selecting a different font can affect the speed of your store.[Learn more about system fonts.](https:\/\/help.shopify.com\/en\/manual\/online-store\/store-speed\/improving-speed#fonts)"
       },
       {
         "type": "range",
@@ -135,25 +136,25 @@
         "type": "text",
         "id": "social_facebook_link",
         "label": "Facebook",
-        "info": "https://facebook.com/shopify"
+        "info": "https:\/\/facebook.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_instagram_link",
         "label": "Instagram",
-        "info": "http://instagram.com/shopify"
+        "info": "http:\/\/instagram.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_youtube_link",
         "label": "YouTube",
-        "info": "https://www.youtube.com/shopify"
+        "info": "https:\/\/www.youtube.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_twitter_link",
         "label": "Twitter",
-        "info": "https://twitter.com/shopify"
+        "info": "https:\/\/twitter.com\/shopify"
       }
     ]
   }
