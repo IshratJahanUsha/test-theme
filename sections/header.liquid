@@ -1,0 +1,115 @@
+<script src="{{ 'header.js' | asset_url }}" defer="defer"></script>
+
+{% liquid
+  if settings.social_facebook_link != blank or settings.social_instagram_link != blank or settings.social_youtube_link != blank or settings.social_twitter_link != blank
+    assign has_social_links = true
+  endif
+%}
+
+{%- style -%}
+  .header {
+    padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px;
+    margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
+    background-color: var(--primary-background);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: sticky;
+    width:100%;
+    top: 0;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  @media screen and (min-width: 750px) {
+    .header {
+      margin-bottom: {{ section.settings.margin_bottom }}px;
+      z-index: 5;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .header {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+{%- endstyle -%}
+
+<header class="header">
+  {% comment %} Visible on devices with a width below 768px{% endcomment %}
+  {%- liquid
+    if section.settings.menu != blank
+      render 'header-mobile'
+    endif
+  -%}
+  
+  {% comment %} Visible on devices with a width above 768px{% endcomment %}
+  {%- liquid
+    if section.settings.menu != blank
+      render 'header-desktop'
+    endif
+  -%}
+</header>
+
+
+
+
+
+{% schema %}
+{
+  "name": "Header",
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "menu",
+      "default": "main-menu",
+      "label": "Menu"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom margin",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 36,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 36,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 12
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ]
+}
+{% endschema %}

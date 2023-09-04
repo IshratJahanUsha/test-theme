@@ -1,4 +1,4 @@
-/* Reset default styles for all elements */
+/* Reset default styles */
 *,
 *::before,
 *::after {
@@ -52,7 +52,7 @@ a {
   color: var(--basic-color);
 }
 
-/* Reusable classes */
+/* Re-usable classes */
 .icon {
   cursor: pointer;
 }
@@ -132,14 +132,14 @@ body {
   color: var(--basic-color);
 }
 
-/* Media query of Body for larger screens */
+/* Media Query for Body (lg screens) */
 @media screen and (min-width: 768px) {
   body {
     font-size: 1.6rem;
   }
 }
 
-/* Heading styles for all levels */
+/* Heading styles*/
 h1,
 h2,
 h3,
@@ -160,7 +160,7 @@ h6,
   word-break: break-word;
 }
 
-/*  Font size for Heading on small and larger screens */
+/*  Font size for Heading (sm & lg screens)  */
 .h0 {
   font-size: calc(var(--font-heading-scale) * 4rem);
 }
