@@ -52,9 +52,91 @@
   -%}
 </header>
 
+{% comment %} nav and overlay Visible on devices with a width below 768px {% endcomment %}
+<nav class="menu_container">
+  <div class="close_icon_container">
+    <span class="close">
+      {% render 'icon-close' %}
+    </span>
+  </div>
+  <ul class="menu h3">
+    {%- for link in section.settings.menu.links -%}
+      <li class="menu-link">
+        {%- if link.links != blank -%}
+          <div>
 
+            <div class="link_container">
+              <span>
+                {{- link.title | escape -}}
+              </span>
+              {% render 'icon-caret' %}
+            </div>
 
+            <div class="wrapper">
+              <ul class="dropdown-child">
+                {%- for childlink in link.links -%}
+                  <li class="child_menu-link menu-link">
 
+                    {%- if childlink.links == blank -%}
+                      <a href="{{ childlink.url }}">
+                        {{ childlink.title | escape }}
+                      </a>
+                    {%- else -%}
+                      <div class="link_container">
+                        <span>{{ childlink.title | escape }}</span>
+                        {% render 'icon-caret' %}
+                      </div>
+                      <div class="wrapper">
+
+                        <ul class="dropdown-grandchild">
+                          {%- for grandchildlink in childlink.links -%}
+                            <li class="menu-link grandchild_menu-link">
+                              <a href="{{ grandchildlink.url }}">
+                                {{ grandchildlink.title | escape }}
+                              </a>
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+
+                      </div>
+                    {%- endif -%}
+
+                  </li>
+                {%- endfor -%}
+              </ul>
+            </div>
+
+          </div>
+        {%- else -%}
+          <a href="{{ link.url }}">
+            <span>
+              {{- link.title | escape -}}
+            </span>
+          </a>
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+
+  <div class="navbar_links_container">
+    {%- if shop.customer_accounts_enabled -%}
+      <a
+        class="mobail_account_container"
+        href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
+      >
+        {% render 'icon-account' -%}
+        <span>Log in</span>
+      </a>
+
+      {% if has_social_links %}
+        {% render 'social-links', device: 'mobail-social_links_container' %}
+      {% endif %}
+    {%- endif -%}
+  </div>
+
+</nav>
+
+<div class="overlay"></div>
 
 {% schema %}
 {
