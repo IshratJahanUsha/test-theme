@@ -1,9 +1,9 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Men Essentials Emporium",
+    "theme_name": "Dawn E-Commerce",
     "theme_version": "1.0",
-    "theme_author": "Siam Hossen",
+    "theme_author": "Ishrat Jahan",
     "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
     "theme_support_url": "https://support.shopify.com/"
   },
@@ -42,8 +42,8 @@
       },
       {
         "type": "color",
-        "id": "base_color",
-        "label": "Base",
+        "id": "basic_color",
+        "label": "Basic",
         "default": "#142C73"
       },
       {
