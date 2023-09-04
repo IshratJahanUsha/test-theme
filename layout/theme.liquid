@@ -19,7 +19,7 @@
       {{ content_for_header }}
   
       {% comment %}
-        Custom CSS properties and variables for various design elements based on theme settings.
+        Custom CSS properties
       {% endcomment %}
       {% render 'root-css' %}
   
@@ -27,7 +27,7 @@
         Linking 'main.css' stylesheet to ensure consistent styling across the theme's pages.
       {% endcomment %}
       {{ 'main.css' | asset_url | stylesheet_tag }}
-      
+
     </head>
   
     <body>
