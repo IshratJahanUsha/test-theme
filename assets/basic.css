@@ -49,7 +49,7 @@ li {
 
 a {
   text-decoration: none;
-  color: var(--base-color);
+  color: var(--basic-color);
 }
 
 /* Reusable classes */
@@ -70,7 +70,7 @@ a {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--base-color);
+  background-color: var(--basic-color);
   transition: width 0.3s ease;
 }
 
@@ -80,7 +80,7 @@ a {
 
 .btn {
   all: unset;
-  background-color: var(--accent-color);
+  background-color: var(--Dark-Cyan-color);
   color: var(--primary-background);
   font-weight: 600;
   padding: 1rem 1.5rem;
