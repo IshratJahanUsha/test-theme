@@ -60,6 +60,12 @@
       },
       {
         "type": "color",
+        "id": "cyan_color",
+        "label": "Cyan",
+        "default": "#04d6c3"
+      },
+      {
+        "type": "color",
         "id": "primary_background",
         "label": "Primary background",
         "default": "#FFFFFF"
