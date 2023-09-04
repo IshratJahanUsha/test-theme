@@ -129,7 +129,7 @@ body {
   letter-spacing: 0.06rem;
   line-height: calc(1 + 0.8 / var(--font-body-scale));
   background-color: var(--primary-background);
-  color: var(--base-color);
+  color: var(--basic-color);
 }
 
 /* Media query of Body for larger screens */
