@@ -1,8 +1,7 @@
 {{ 'announcement-bar.css' | asset_url | stylesheet_tag }}
 
 {% liquid
-
-  #code for social links, announcement bar text, and the visibility of social links
+  # This part of code checks f-or social links, announcement bar text, and the visibility of social links
 
   assign has_social_links = false
   assign has_announcement_bar = true
@@ -63,7 +62,7 @@
     {
       "type": "text",
       "id": "text",
-      "default": "50% off - Time Limited",
+      "default": "FREE SHIPPING - no code needed",
       "label": "Text"
     },
     {
