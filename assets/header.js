@@ -18,6 +18,31 @@ class ScrollElementController {
 }
 const scrollHeader = new ScrollElementController(".header", "hide-header");
 
+
+// 
+$(document).ready(function () {
+  // Function to make the header sticky
+  function makeHeaderSticky() {
+    var header = $(".header");
+    var scrollPosition = $(window).scrollTop();
+
+    if (scrollPosition > 0) {
+      header.addClass("sticky");
+    } else {
+      header.removeClass("sticky");
+    }
+  }
+
+  // Call the function on page load
+  makeHeaderSticky();
+
+  // Call the function when the user scrolls
+  $(window).scroll(function () {
+    makeHeaderSticky();
+  });
+});
+// 
+
 // Define a controller class for managing toggle behavior
 class ToggleController {
   constructor(openSelector, closeSelector, element) {
