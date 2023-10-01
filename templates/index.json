@@ -6,27 +6,6 @@
         "slide_item": {
           "type": "Slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/img-1_fb837a3a-4273-4e04-aec9-a4ae0c5cf996.webp",
-            "heading": "Slide heading",
-            "text": "Text from here describes your slide",
-            "btn_label": "See more",
-            "btn_link": ""
-          }
-        },
-        "47e5c46e-89a1-4556-81b8-9fee224c7062": {
-          "type": "Slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/img-3.webp",
-            "heading": "Slide heading",
-            "text": "Text from here describes your slide",
-            "btn_label": "See more",
-            "btn_link": ""
-          }
-        },
-        "1100a4b4-1509-4fe2-ab55-1a0fe639f168": {
-          "type": "Slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/img-2.webp",
             "heading": "Slide heading",
             "text": "Text from here describes your slide",
             "btn_label": "See more",
@@ -34,11 +13,7 @@
           }
         }
       },
-      "block_order": [
-        "slide_item",
-        "47e5c46e-89a1-4556-81b8-9fee224c7062",
-        "1100a4b4-1509-4fe2-ab55-1a0fe639f168"
-      ],
+      "block_order": ["slide_item"],
       "settings": {
         "show_arrows": true,
         "show_bullets": true,
@@ -46,9 +21,43 @@
         "top_margin": 0,
         "bottom_margin": 0
       }
+    },
+    "home_collection": {
+      "type": "home-collections",
+      "blocks": {
+        "collection_items": {
+          "type": "Collection_Item",
+          "settings": {
+            "label_collection": "",
+            "home_collection": ""
+          }
+        }
+      },
+      "block_order": ["collection_items"],
+      "settings": {
+        "top_home_collection_margin": 45,
+        "bottom_home_collection_margin": 0
+      }
+    },
+    "sale_poster": {
+      "type": "sale-poster",
+      "settings": {
+        "sale_poster_top_margin": 45,
+        "sale_poster_bottom_margin": 0,
+        "subtitle_top": "Up to",
+        "title": "30%",
+        "subtitle_bottom": "OFF",
+        "button_label": "SEE MORE",
+        "button_link": ""
+      }
+    },
+    "new_arrival": {
+      "type": "new-arrival",
+      "settings": {
+        "new_arrival_top_margin": 45,
+        "new_arrival_bottom_margin": 0
+      }
     }
   },
-  "order": [
-    "image_sildeshow"
-  ]
+  "order": ["image_sildeshow", "home_collection", "sale_poster", "new_arrival"]
 }
