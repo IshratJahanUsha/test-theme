@@ -11,9 +11,21 @@
             "btn_label": "See more",
             "btn_link": ""
           }
+        },
+        "2974e02d-f826-4bbf-82c8-6ac8ea4af53b": {
+          "type": "Slide",
+          "settings": {
+            "heading": "Slide heading",
+            "text": "Text from here describes your slide",
+            "btn_label": "See more",
+            "btn_link": ""
+          }
         }
       },
-      "block_order": ["slide_item"],
+      "block_order": [
+        "slide_item",
+        "2974e02d-f826-4bbf-82c8-6ac8ea4af53b"
+      ],
       "settings": {
         "show_arrows": true,
         "show_bullets": true,
@@ -25,13 +37,13 @@
     "sale_poster": {
       "type": "sale-poster",
       "settings": {
-        "sale_poster_top_margin": 45,
-        "sale_poster_bottom_margin": 0,
         "subtitle_top": "Up to",
         "title": "30%",
         "subtitle_bottom": "OFF",
         "button_label": "SEE MORE",
-        "button_link": ""
+        "button_link": "",
+        "sale_poster_top_margin": 45,
+        "sale_poster_bottom_margin": 0
       }
     },
     "new_arrival": {
@@ -42,5 +54,9 @@
       }
     }
   },
-  "order": ["image_sildeshow", "sale_poster", "new_arrival"]
+  "order": [
+    "image_sildeshow",
+    "sale_poster",
+    "new_arrival"
+  ]
 }
