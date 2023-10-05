@@ -72,19 +72,19 @@
     </nav>
   </div>
   <div class="desktop_header_links_container">
-    <span>
+    <span class="search_icon">
       {% render 'icon-search' %}
     </span>
 
     <a href="{{ routes.cart_url }}">
-      {% if cart == empty %}
+      <div class="cart_icon_container">
         {% render 'icon-cart' %}
-      {% else %}
-        <div class="cart_icon_container">
-          {% render 'icon-search' %}
-          <span>{{ cart.item_count }}</span>
-        </div>
-      {% endif %}
+        {% if cart.item_count > 0 %}
+          <span class="cart_item_counter">{{ cart.item_count }} </span>
+        {% else %}
+          <span class="cart_item_counter">0</span>
+        {% endif %}
+      </div>
     </a>
 
     {%- if shop.customer_accounts_enabled -%}
