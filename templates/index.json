@@ -44,10 +44,19 @@
             "label_collection": "Panjabi",
             "home_collection": "panjabi"
           }
+        },
+        "57ed9b55-82a8-4b86-b33a-7c2faf3c6679": {
+          "type": "Collection_Item",
+          "settings": {
+            "collection_image": "shopify:\/\/shop_images\/premium-tshirt-2.jpg",
+            "label_collection": "T-Shirt",
+            "home_collection": "t-shirt"
+          }
         }
       },
       "block_order": [
-        "collection_items"
+        "collection_items",
+        "57ed9b55-82a8-4b86-b33a-7c2faf3c6679"
       ],
       "settings": {
         "top_home_collection_margin": 45,
