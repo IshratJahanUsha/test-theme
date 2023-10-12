@@ -64,8 +64,9 @@
         "224f31ad-a29b-4b00-97a9-451861e97617": {
           "type": "Collection_Item",
           "settings": {
-            "label_collection": "Men",
-            "home_collection": ""
+            "collection_image": "shopify:\/\/shop_images\/show-banner.webp",
+            "label_collection": "Shoe",
+            "home_collection": "shoe"
           }
         }
       },
