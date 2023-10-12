@@ -40,12 +40,15 @@
         "collection_items": {
           "type": "Collection_Item",
           "settings": {
-            "label_collection": "",
-            "home_collection": ""
+            "collection_image": "shopify:\/\/shop_images\/navy-blue-panjabi.jpg",
+            "label_collection": "Panjabi",
+            "home_collection": "panjabi"
           }
         }
       },
-      "block_order": ["collection_items"],
+      "block_order": [
+        "collection_items"
+      ],
       "settings": {
         "top_home_collection_margin": 45,
         "bottom_home_collection_margin": 0
@@ -73,7 +76,7 @@
   },
   "order": [
     "image_sildeshow",
-    "home_collection", 
+    "home_collection",
     "sale_poster",
     "new_arrival"
   ]
