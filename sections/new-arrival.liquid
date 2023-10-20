@@ -25,7 +25,7 @@
 
   <div class="new_arrival_items">
     <div class="product_card_container">
-      {% for product in collections.frontpage.products %}
+      {% for product in collections.frontpage.products limit:8 %}
         <a href="{{product.url}}" class="product_card">
           <img src="{{product.featured_image | image_url: width: 250}}" alt="">
           <div class="product_content">
